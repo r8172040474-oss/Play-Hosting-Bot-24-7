@@ -1,14 +1,14 @@
 {
   "name": "AFK Bot",
   "bot-account": {
-    "username": "SoloCloudHosting",
+    "username": "Ronak",
     "password": "",
     "type": "offline"
   },
   "server": {
-    "ip": "betrayal-s1.play.hosting",
-    "port": 3124,
-    "version": "1.20.1",
+    "ip": "storesmp.play.hosting",
+    "port": 25565,
+    "version": "26.2",
     "try-creative": false
   },
   "position": {
@@ -27,7 +27,7 @@
       "sneak": true
     },
     "chat-messages": {
-      "enabled": true,
+      "enabled": false,
       "repeat": true,
       "repeat-delay": 120,
       "messages": [
