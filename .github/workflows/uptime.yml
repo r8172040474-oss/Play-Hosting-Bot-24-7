@@ -1,0 +1,21 @@
+ name: 24-7 Uptime Loop
+
+on:
+  schedule:
+    # This cron expression tells GitHub to run every 5 minutes, 24/7
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # Allows you to also trigger it manually with a button
+
+jobs:
+  ping-server:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository Code
+      uses: actions/checkout@v4
+
+    - name: Run Your Monitoring Script
+      run: |
+        echo "Checking Minecraft Server Status..."
+        # Replace the line below with your actual script execution command
+        curl -I https://your-server-api-or-website.com
+        
